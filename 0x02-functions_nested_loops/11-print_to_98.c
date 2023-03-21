@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * times_table - Prints the times table of 8, up to 8 * 9.
+ * print_to_98 - Prints the times table of 8, up to 8 * 9.
  */
-void times_table(void)
+void print_to_98(int n)
 {
 int i;
-int n = 9;
+
 for (i = n; i <= 98; i++)
 {
 if (i < 10)
