@@ -1,62 +1,25 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_to_98 - prints all integers from n to 98
- * @n: the starting integer
- *
- * This function prints all integers from n to 98, separated by commas and a
- * space, in ascending order if n is less than 98, or in descending order if
- * n is greater than 98. The integers are printed to standard output, with
- * each set of integers ending in a newline character.
+ * times_table - Prints the times table of 8, up to 8 * 9.
  */
-void print_to_98(int n)
+void times_table(void)
 {
-if (n > 98)
+int i;
+int n = 9;
+for (i = n; i <= 98; i++)
 {
-while (n >= 98)
+if (i < 10)
 {
-printf("%d", n);
-if (n != 98)
-{
-printf(", ");
-}
-n--;
-}
+_putchar(i + '0');
 }
 else
 {
-while (n <= 98)
-{
-printf("%d", n);
-if (n != 98)
-{
-printf(", ");
+_putchar((i / 10) + '0');
+_putchar((i % 10) + '0');
 }
-n++;
+_putchar(' ');
 }
-}
-printf("\n");
-}
-
-/**
- * main - entry point of the program
- *
- * This function calls the print_to_98 function with several different
- * arguments to demonstrate its use.
- *
- * Return: 0 on success
- */
-int main(void)
-{
-print_to_98(0);
-printf("\n");
-print_to_98(98);
-printf("\n");
-print_to_98(111);
-printf("\n");
-print_to_98(81);
-printf("\n");
-print_to_98(-10);
-return (0);
+_putchar('\n');
 }
 
