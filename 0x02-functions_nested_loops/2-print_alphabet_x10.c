@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
+ * print_alphabetx10 - Print alphabet 10x
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 char x_ter;
 int i;
@@ -12,11 +12,12 @@ for (i = 0; i <= 10; i++)
 {
 for (x_ter = 'a'; x_ter <= 'z'; x_ter++)
 {
-putchar(x_ter);
-}
-}
-putchar('\n');
+_putchar(x_ter);
 
-return (0);
+}
+_putchar('\n');
+}
+
+
 }
 
