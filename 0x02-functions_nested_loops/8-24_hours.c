@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * jack_bauer - Prints every minute of the day of Jack Bauer.
@@ -11,14 +11,20 @@ for (hour = 0; hour < 24; hour++)
 {
 for (minute = 0; minute < 60; minute++)
 {
-printf("%02d:%02d\n", hour, minute);
-}
-}
-}
-
-int main(void)
+if (hour < 10)
 {
-jack_bauer();
-return (0);
+_putchar('0');
+_putchar('hour');
+}
+_putchar('hour');
+_putchar(':');
+if (minute < 10)
+{
+_putchar('0');
+_putchar('minute');
+}
+_putchar('minute');
+}
+}
 }
 
