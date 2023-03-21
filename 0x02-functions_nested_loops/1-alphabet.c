@@ -1,18 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - Entry point
+ * print_aplhabet - prints alphabets
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
-int main(void)
+void print_alpahabet(void)
 {
 char x_ter;
 for (x_ter = 'a'; x_ter <= 'z'; x_ter++)
-putchar(x_ter);
+_putchar(x_ter);
 
-putchar('\n');
+_putchar('\n');
 
-return (0);
 }
