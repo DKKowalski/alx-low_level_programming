@@ -1,10 +1,9 @@
 #include "main.h"
 /**
-
-print_number - Prints an integer to stdout
-@n: The integer to be printed
-Return: void
-*/
+ * print_number - Prints an integer to stdout
+ * @n: The integer to be printed
+ * Return: void
+ */
 void print_number(int n)
 {
 if (n < 0)
