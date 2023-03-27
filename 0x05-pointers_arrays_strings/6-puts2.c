@@ -16,8 +16,8 @@ if (i % 2 != 0)
 {
 continue;
 }
-putchar(str[i]);
+_putchar(str[i]);
 }
-putchar('\n');
+_putchar('\n');
 }
 
