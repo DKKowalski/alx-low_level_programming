@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * _strlen - Returns the length of a string.
  * @s: The string to get the length of.
