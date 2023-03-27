@@ -7,8 +7,8 @@
  */
 void print_rev(char *s)
 {
-unsigned long int i;
-for (i = strlen(s); i >= 0; i--)
+int i;
+for (i = (int)strlen(s); i >= 0; i--)
 {
 _putchar(s[i]);
 
