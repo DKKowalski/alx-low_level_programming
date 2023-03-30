@@ -23,6 +23,6 @@ str[i + 1] -= 32;  /* Capitalize the next character */
 }
 }
 
-return str;
+return (str);
 }
 
