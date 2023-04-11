@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 /**
  * _strdup - function that returns a pointer
  * to a newly allocated space in memory,
@@ -6,9 +8,6 @@
  * or NULL if insufficient memory was available
  * or if str is NULL
  */
-
-#include <stdlib.h>
-#include <string.h>
 
 char *_strdup(char *str)
 {
@@ -19,7 +18,7 @@ if (str == NULL)
 return (NULL);
 }
 
-newStr = malloc(strlen(char) + 1);
+newStr = malloc(strlen(str) + 1);
 
 if (newStr == NULL)
 {
