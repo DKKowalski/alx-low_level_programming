@@ -16,10 +16,10 @@ if (array && cmp && size > 0)
 for (i = 0; i < size; i++)
 {
 if (cmp(array[i]) != 0)
-return i;
+return (i);
 }
 }
 
-return -1;
+return (-1);
 }
 
