@@ -1,3 +1,7 @@
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "lists.h"
 /**
  * print_list - Prints all the elements of a list_t list.
  * @h: Pointer to the head of the list.
@@ -10,7 +14,7 @@ size_t count = 0;
 
  while (h != NULL)
 {
-printf("[%lu] ", h->len);
+printf("[%d] ", h->len);
 if (h->str != NULL)
 	printf("%s\n", h->str);
 else
